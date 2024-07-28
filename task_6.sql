@@ -8,7 +8,7 @@ mydb = mysql.connector.connect(
 )
 mycursor = mydb.cursor()
 
-sql = "INSERT INTO Customer (customer_id, customer_name, email, address) VALUES (%d, %s, %s, %s)"
+sql = "INSERT INTO customer (customer_id, customer_name, email, address) VALUES (%d, %s, %s, %s)"
 val = [
 ("2", "Blessing Malik", "bmalik@sandtech.com", "124 Happimess Ave."),
 ("3", "Obed Ehoneah", "eobed@sandtech.com", "125 Happimess Ave."),
