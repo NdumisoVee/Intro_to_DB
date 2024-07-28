@@ -29,7 +29,7 @@ CREATE TABLE Authors (
 
 mycursor.execute("""
 CREATE TABLE Customers (
-    customer_id AUTO_INCREMENT PRIMARY KEY,
+    customer_id INT AUTO_INCREMENT PRIMARY KEY,
     customer_name VARCHAR(215),
     email VARCHAR(215) NOT NULL UNIQUE,
     address TEXT
