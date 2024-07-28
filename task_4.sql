@@ -7,8 +7,9 @@ mydb = mysql.connector.connect(
     database="alx_book_store"
 )
 
-mycursor.execute("SELECT * Books")
-myresult = mycursor.fetchall()
-
-for row in myresult:
-  print(row)
+mycursor.execute("""
+SELECT COLUMN_NAME, COLUMN_TYPE, IS_NULLABLE, COLUMN_KEY, COLUMN_DEFAULT, EXTRA
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_SCHEMA = 'alx_book_store'
+AND TABLE_NAME = 'books'
+""")
