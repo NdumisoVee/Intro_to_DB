@@ -55,4 +55,3 @@ CREATE TABLE Order_Details (
     --FOREIGN KEY (book_id) REFERENCES Books(book_id)
 )
 """)
-
